@@ -1,24 +1,22 @@
 package org.example;
 
 public class Familia {
-
-    Animal papa="Dinosaurin";
-    Animal mama="Tiburosin";
-    Animal hijo;
+    public Animal papa;
+    public Animal mama;
+    public Animal hijo;
 
     public Familia(Animal papa, Animal mama) {
         this.papa = papa;
         this.mama = mama;
     }
 
-    public  imprimirFamilia(){
-
+    public void imprimirFamilia(){
         //Este metodo muestra los nombres de los integrantes de la familia
-        system.out.println(
-                "El papá es: "+this.papa.nombre+
-                        "\nLa mamá es: "+this.mama.nombre+
-                            "\nEl hijo es: "+this.hijo.nombre
-        )
+        System.out.println(
+                "El papá es: "+this.papa.getNombre()+
+                        "\nLa mamá es: "+this.mama.getNombre()+
+                            "\nEl hijo es: "+this.hijo.getNombre()
+        );
 
     }
 
@@ -27,13 +25,13 @@ public class Familia {
         if(this.papa.pareja!=null){
 
             Animal hijo= new Animal();
-            hijo.nombre=nombre;
-            hijo.peso=1;
+            hijo.setNombre(nombre);
+            hijo.setPeso(1);
             double random = Math.random();
             if(random<0.5){
-                hijo.genero="F";
+                hijo.setGenero("F");
             }else{
-                hijo.genero="M";
+                hijo.setGenero("M");
             }
             this.hijo=hijo;
 
