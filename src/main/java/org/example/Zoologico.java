@@ -6,12 +6,12 @@ public class Zoologico {
 
         Animal animal1 = new Animal();
         animal1.setNombre("Cebra");
-        animal1.setGenero("F");
+        animal1.setGenero("M");
 
 
         Animal animal2 = new Animal();
         animal2.setNombre("Caballo");
-        animal2.setGenero("M");
+        animal2.setGenero("F");
 
 
         animal1.encontrarPareja(animal2); //Un animal consigue pareja

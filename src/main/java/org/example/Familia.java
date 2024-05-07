@@ -1,9 +1,9 @@
 package org.example;
 
 public class Familia {
-    public Animal papa;
-    public Animal mama;
-    public Animal hijo;
+    private Animal papa;
+    private Animal mama;
+    private Animal hijo;
 
     public Familia(Animal papa, Animal mama) {
         this.papa = papa;
